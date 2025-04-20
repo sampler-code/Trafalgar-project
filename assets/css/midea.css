@@ -1,0 +1,135 @@
+/*  responsive
+للشاشات الصغيرة */
+/*  عادةً المنيو ما بكون لينكس جمب بعض بكون ايقونة بضغط عليها بتطلع اللينكس وبتكون بالنص  */
+/*  لازم اضل منتبهة على موضوع  specifity لانه وقتها أحد الستايلات ما رح يتطبق  */
+
+@media (max-width: 992px)
+{
+  
+     #menu-check:checked ~ ul.flex{  
+        display: flex;
+    }  
+    label .open {
+        display: inherit;
+    }
+    .close {
+        display: none;
+    }
+    #menu-check:checked ~ label  .open {
+        display: none;   
+    }
+    #menu-check:checked ~ label .close {
+        display: inline;
+    }
+
+/*  website --> inspect --> selector for nav bar (links only ) : ul.flex */
+ul.flex {
+    /* عشان الظهور مع الشيك بوكس */
+    display: none;
+    /*  عشان يصيرو عموديات  */
+    flex-direction: column;
+    /*  بدي أطلعها من الناف وتكون بالنص  */
+    /*  ما تنسي ترجعي للأب  */
+    position: absolute;
+    /* عشان تكون تحت اللوجو بحطش صفر بحط الهايت تبعنا */
+    top: 81px; 
+    background-color: rgba(255, 255, 255, 0);
+/*  عادي تيجي فوق الحكي بس لازم توخذ العرض كامل  */
+width: 100%;
+/*  لانها ماخدة فلكس و بدي أعمل بالنص  */
+justify-content: center;
+left: 0;
+عشان نوسع عليها وتضل ماخدة مساحة من جميع الجهات 
+padding: 20px; 
+/* بدي أعمل انه لما تيجي المنيو يلي وراها يصير شفاف و مغبش  */
+backdrop-filter: blur(10px);
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin: 10rem 0 ;
+}
+header .flex{
+    flex-direction: column-reverse ;
+    gap: 3rem;
+}
+.header-content{
+    width: 100%;
+}
+
+/*  */
+.services .card{
+    max-width: 100%;
+}
+.cards-bg{
+    width: 100%;
+}
+
+ /*  */
+.healthcare {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.health-content, .health-img  {
+
+    width: 100%;}
+   
+    .health-img  {
+    
+    margin-left : 0;}
+        
+    /* .health-img img {   */
+            /* width: 70%; */
+            /* height: auto; */
+            /* } */
+   
+           
+.cont-dow{
+width:100%;
+}
+
+.sec-dow {
+    flex-direction: column;
+}
+.cont-dow, .pic-dow {
+    width: 100%;
+}
+.cont-dow {
+    margin-bottom: 30px;
+}
+.pic-dow{
+    margin-left: 30px;
+}
+/*  */
+.testimonials.flex{
+    flex-direction: column;
+    gap: 50%;
+
+}
+.testimonials .content, .testimonials .qoute{
+    width:100%;
+}
+
+.articles .card{
+    width:100%;
+    
+}
+.footer-container {
+    flex-direction: column;}
+    .footer-brand, .footer-col {
+        width: 100%;
+        max-width: 100%;
+      }
+    
+      .footer-brand .logo {
+        justify-content: center;
+      }
+   .container{
+    padding-left: 10px; ;
+   }
+
+}
