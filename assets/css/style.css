@@ -17,11 +17,13 @@ h1{
     font-weight: 400;
     color: black;
 }
- .container.flex.dots {
+
+.dots {
     width:131px;
     height:115px;
+    position: absolute ;
      top: 160px;
-     left:-50px;
+     left:0;
      opacity:50%;
 }
 :root {
@@ -36,6 +38,9 @@ p{
 
 }
 /*  حددته لإنه مش كل الفقرات إلها نفس الحجم  */
+header{
+    position: relative;
+}
 .header-content p{
     font-size: 21px;
     line-height:32px;
@@ -62,6 +67,7 @@ p{
     color: white;
 }
 /* للفصل بين الصورة والمحتويات التانية لكن أنا ما بدية أعطي لفلكس العامة بدي أخصصها للي جوا الهيدر  */
+
 header .flex{
 gap: 109px;
 }
@@ -145,7 +151,7 @@ section{
     border-radius:35px ;
     margin-bottom:3rem ;
     background-color: white;
-    box-shadow: 10px 40px 50px 0 rgba(#E5E9F666);
+    box-shadow: 10px 40px 50px 0 #E5E9F666;
     -webkit-border-radius:35px ;
     -moz-border-radius:35px ;
     -ms-border-radius:35px ;
@@ -195,15 +201,18 @@ section{
     gap: 137px;
     }
 
+
     .health-img{
-        margin-left:50px;
+        /* margin-left:50px; */
       
     }
+
  .health-img img{
     width:100%;
     height: auto;
     display: block;
  }
+
  .health-content {
     width:30%; 
  }
@@ -245,15 +254,11 @@ section{
  
 .cont-dow.btn{
     background-color: white;
-    color:var(--primary)
+    color:var(--primary);
     border-color: var(--primary) ;
-    -webkit-border-radius: ;
-    -moz-border-radius: ;
-    -ms-border-radius: ;
-    -o-border-radius: ;
 }
 .cont-dow{
-    margin-left:163px;
+    /* margin-left:163px; */
 
 }
 .pic-dow img{
@@ -308,13 +313,18 @@ section{
 .testimonials.flex{
     gap:100px;
 }
+.testimonials h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
 .testimonials .content.flex{
     gap:2rem;
     justify-content: flex-start;
 }
 .testimonials .content, .testimonials .qoute{
     width:50%;
-
+    margin-top: 10px;
+    text-align: center;
     
 }
 .testimonials{
